@@ -54,7 +54,8 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+In Type 1, the customer’s old address is overwritten. We will only keep the current one.
+In Type 2, each address change creates a new record with effective dates so historical addresses can be seen.
 ```
 
 ***
@@ -183,5 +184,11 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The critical issue here lies in the potential biases that the people who design and train machine learning models inevitably introduce. These models can never be fully objective, as they depend on humans to construct training datasets and perform parameter tuning—processes in which subjective judgments are embedded at every step. Individuals from different cultural, linguistic, or geographic backgrounds may conceptualize categories in distinct ways, meaning that the so-called “ground truth” in training data reflects particular social and cognitive perspectives.
+
+Because model outputs are often circulated widely and perceived as authoritative or neutral—especially by audiences who may not question their origins—it becomes essential to consider whose viewpoints are encoded in the data. If labeling work predominantly reflects the values and assumptions of majority groups, models risk marginalizing minority perspectives and subtly narrowing the range of human experience that technology recognizes as valid. Over time, such imbalances can reinforce social hierarchies and erode cultural diversity under the guise of technical efficiency.
+
+Furthermore, the biased outputs of these systems do not remain confined within the models themselves. They shape the knowledge and perceptions of the people who interact with them, subtly influencing how individuals interpret the world. When such influenced understanding is later used to generate new data or guide additional rounds of model training, it reintroduces and amplifies the same distortions, creating a self-reinforcing feedback loop. This cyclical relationship between human cognition and machine output makes bias not just a byproduct of design, but a dynamic force that evolves through continuous interaction between humans and algorithms.
+
+As the scale of human involvement in model training expands, so too does the complexity of this feedback system. Each additional layer of data preparation, annotation, and tuning multiplies the number of human choices that shape the system, yet these choices often remain invisible. Recognizing the human foundations of machine learning is therefore not merely a technical or ethical task but an epistemological one—it requires acknowledging that our technologies reproduce, and can intensify, the same patterns of understanding and exclusion that exist in society itself.
 ```
